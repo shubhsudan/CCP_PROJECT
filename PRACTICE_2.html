@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        input, select {
+            width: calc(100% - 24px); /* Adjusted to account for padding and borders */
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .group {
+            display: flex;
+            gap: 5px; /* Reduced the gap between radio buttons and labels */
+            align-items: center;
+        }
+        .group label {
+            width: 70px; /* Fixed width for labels */
+        }
+        .group input {
+            width: auto; /* Allow inputs to fill remaining space */
+        }
+        input[type="submit"] {
+            background-color: greenyellow;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>First Name</label>
+        <input type="text" name="T1">
+        <label>Last Name</label>
+        <input type="text" name="T2">
+        <label>Email Address</label>
+        <input type="text" name="EmTxt">
+        <label>Password</label>
+        <input type="password" name="T4">
+        <label>Confirm Password</label>
+        <input type="Confirm password" name="T5">
+        <label>Date Of Birth</label>
+        <input type="Date" name="T6">
+        <label>Gender</label>
+        <div class="group">
+            <label for="gen1">Male</label>
+            <input type="radio" name="gender" id="gen1"> 
+            <label for="gen2">Female</label>
+            <input type="radio" name="gender" id="gen2"> 
+            <label for="gen3">Others</label>
+            <input type="radio" name="gender" id="gen3">
+        </div>
+        <label>Country</label>
+        <select name="C1">
+            <option>India</option>
+            <option>UK</option>
+            <option>USA</option>
+            <option>GERMANY</option>
+        </select>
+        <label>Picture Upload</label>
+        <input type="file" name="T7">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
